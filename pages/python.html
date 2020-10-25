@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Personal Wiki</title>
+	<meta name="description" content="">
+	<meta name="author" content="Valentin Dusserre">
+
+	<!-- HTML5 shim, for IE6-8 support of HTML elements -->
+	<!--[if lt IE 9]>
+		<script src="../theme/html5.js"></script>
+	<![endif]-->
+
+	<!-- Styles -->
+	<link href="../theme/bootstrap.min.css" rel="stylesheet">
+	<link href="../theme/local.css" rel="stylesheet">
+	<link href="../theme/pygments.css" rel="stylesheet">
+
+	<!-- Feeds -->
+
+
+
+
+</head>
+<body>
+	<div class="topbar">
+	  <div class="topbar-inner">
+		<div class="container-fluid">
+		  <a class="brand" href="../">Personal Wiki</a>
+			<ul class="nav">
+						<li><a href="../pages/linux.html">Linux</a></li>
+						<li><a href="../pages/python.html">Python</a></li>
+			</ul>
+			<p class="pull-right"><a href="../archives.html">[archives]</a> <a href="../tags.html">[tags]</a></p>
+		</div>
+	  </div>
+	</div>
+
+	<div class="container-fluid">
+	  <div class="sidebar">
+		<div class="well">
+			<h3>Blogroll</h3>
+			<ul>
+				<li><a href="https://getpelican.com/">Pelican</a></li>
+				<li><a href="https://www.python.org/">Python.org</a></li>
+				<li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+				<li><a href="#">You can modify those links in your config file</a></li>
+			</ul>
+			<div class="social">
+			<h3>Social</h3>
+			<ul>
+				<li><a href="#">You can add links in your config file</a></li>
+				<li><a href="#">Another social link</a></li>
+			</ul>
+			</div>
+		</div>
+	  </div>
+	  <div class="content">
+	<div class='page'>
+		<div class="page-header"><h1>Python</h1></div>
+		<div><h2>Notes et projets</h2>
+<p>Superposer deux images avec pillow</p>
+<div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span>
+
+<span class="n">background</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s2">&quot;image1.png&quot;</span><span class="p">)</span>
+<span class="n">front</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s2">&quot;image2.png&quot;</span><span class="p">)</span>
+<span class="n">background</span><span class="o">.</span><span class="n">paste</span><span class="p">(</span><span class="n">front</span><span class="p">,</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="n">front</span><span class="p">)</span>
+<span class="n">background</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s1">&#39;image1+2.png&#39;</span><span class="p">,</span><span class="s2">&quot;PNG&quot;</span><span class="p">)</span>
+</pre></div></div>
+	</div>
+		<footer>
+		  <p>Powered by <a href="http://getpelican.com/">Pelican</a>. Theme based on <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a>.</p>
+		  <p>&copy; Valentin Dusserre</p>
+		</footer>
+	  </div>
+
+	</div>
+</body>
+</html>
